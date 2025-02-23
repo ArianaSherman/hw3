@@ -1,11 +1,5 @@
 class EntriesController < ApplicationController
 
-  def show
-    @entry = Entry.find_by({"id" => params["id"]})
-    @place = Place.find_by({"id" => @entry["place_id"]})
-    # render entries/show view with details about Entry
-  end
-
   def new
     # render contacts/new view with new Contact form
   end
