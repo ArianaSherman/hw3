@@ -12,7 +12,7 @@ class PlacesController < ApplicationController
   end
 
     def new
-      # render view with new Company form
+      # render view with new place form
     end
 
     def create

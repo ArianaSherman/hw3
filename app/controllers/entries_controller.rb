@@ -1,7 +1,8 @@
 class EntriesController < ApplicationController
 
   def new
-    # render contacts/new view with new Contact form
+    # render new view with new entry form
+    @place=Place.find_by({"id"=>params["place_id"]})
   end
 
   def create
